@@ -4,13 +4,18 @@ ScriptsOnlyBuild:
     - AmongUsGamePlayer
     - AmongUsRoomManager
     - AmongUsRoomPlayer
+    - ColorSelectButton
     - CreateRoomUI
     - CrewFloater
+    - CustomizeLaptop
+    - CustomizeUI
     - FloatingCrew
     - GameRoomSettingUI
     - LobbyCharacterMover
+    - LobbyUIManager
     - MainmenuUI
     - OnlineUI
+    - OutlineObject
     - SettingUI
     - SortingSprite
     - SpawnPositions
@@ -69,10 +74,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -85,6 +88,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
@@ -128,6 +132,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 60
       Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -138,6 +144,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11366}
     - Class: 114
       Script: {instanceID: 11370}
     - Class: 114
@@ -151,19 +159,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13100}
     - Class: 114
-      Script: {instanceID: 14278}
+      Script: {instanceID: 14226}
     - Class: 114
-      Script: {instanceID: 16486}
+      Script: {instanceID: 14282}
     - Class: 114
-      Script: {instanceID: 16638}
+      Script: {instanceID: 14678}
     - Class: 114
-      Script: {instanceID: 16732}
+      Script: {instanceID: 16016}
     - Class: 114
-      Script: {instanceID: 25596}
+      Script: {instanceID: 16496}
     - Class: 114
-      Script: {instanceID: 28640}
+      Script: {instanceID: 16648}
     - Class: 114
-      Script: {instanceID: 28648}
+      Script: {instanceID: 16742}
+    - Class: 114
+      Script: {instanceID: 22876}
+    - Class: 114
+      Script: {instanceID: 22914}
+    - Class: 114
+      Script: {instanceID: 22952}
+    - Class: 114
+      Script: {instanceID: 23622}
+    - Class: 114
+      Script: {instanceID: 23632}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -264,69 +282,69 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13704}
     - Class: 114
-      Script: {instanceID: 13862}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 14038}
+      Script: {instanceID: 13864}
     - Class: 114
-      Script: {instanceID: 14278}
+      Script: {instanceID: 14040}
     - Class: 114
-      Script: {instanceID: 14312}
+      Script: {instanceID: 14282}
     - Class: 114
-      Script: {instanceID: 14390}
+      Script: {instanceID: 14316}
     - Class: 114
-      Script: {instanceID: 14484}
+      Script: {instanceID: 14394}
     - Class: 114
-      Script: {instanceID: 14718}
+      Script: {instanceID: 14488}
     - Class: 114
-      Script: {instanceID: 14742}
+      Script: {instanceID: 14678}
     - Class: 114
-      Script: {instanceID: 14810}
+      Script: {instanceID: 14724}
     - Class: 114
-      Script: {instanceID: 14834}
+      Script: {instanceID: 14748}
     - Class: 114
-      Script: {instanceID: 15006}
+      Script: {instanceID: 14816}
     - Class: 114
-      Script: {instanceID: 15050}
+      Script: {instanceID: 14840}
     - Class: 114
-      Script: {instanceID: 15062}
+      Script: {instanceID: 15012}
     - Class: 114
-      Script: {instanceID: 15504}
+      Script: {instanceID: 15056}
     - Class: 114
-      Script: {instanceID: 15602}
+      Script: {instanceID: 15068}
     - Class: 114
-      Script: {instanceID: 15674}
+      Script: {instanceID: 15512}
     - Class: 114
-      Script: {instanceID: 15686}
+      Script: {instanceID: 15610}
     - Class: 114
-      Script: {instanceID: 15962}
+      Script: {instanceID: 15682}
     - Class: 114
-      Script: {instanceID: 16098}
+      Script: {instanceID: 15694}
     - Class: 114
-      Script: {instanceID: 16232}
+      Script: {instanceID: 15970}
     - Class: 114
-      Script: {instanceID: 16292}
+      Script: {instanceID: 16108}
     - Class: 114
-      Script: {instanceID: 16314}
+      Script: {instanceID: 16242}
     - Class: 114
-      Script: {instanceID: 16580}
+      Script: {instanceID: 16302}
     - Class: 114
-      Script: {instanceID: 16586}
+      Script: {instanceID: 16324}
     - Class: 114
-      Script: {instanceID: 16638}
+      Script: {instanceID: 16590}
     - Class: 114
-      Script: {instanceID: 16668}
+      Script: {instanceID: 16596}
     - Class: 114
-      Script: {instanceID: 16732}
+      Script: {instanceID: 16648}
     - Class: 114
-      Script: {instanceID: 16824}
+      Script: {instanceID: 16678}
     - Class: 114
-      Script: {instanceID: 16830}
+      Script: {instanceID: 16742}
     - Class: 114
-      Script: {instanceID: 16848}
+      Script: {instanceID: 16834}
     - Class: 114
-      Script: {instanceID: 25284}
+      Script: {instanceID: 16840}
     - Class: 114
-      Script: {instanceID: 28648}
+      Script: {instanceID: 16858}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -946,6 +964,12 @@ ScriptsOnlyBuild:
     className: DebugUpdater
   - hash:
       serializedVersion: 2
+      Hash: f269cd866308d5f05eed28def907ba74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LobbyCharacterMover
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -982,7 +1006,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: f3a8ccc18ad656ac8993b34a1b30984f
+      Hash: c2ddabad7148830c1ea6b0c5f839c054
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AmongUsRoomPlayer
@@ -1016,6 +1040,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.NetworkRoom
     className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: 06e5cb7d592c2ea6def91ab1a0c930ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpawnPositions
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -1136,6 +1166,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Components.dll
     namespaceName: Mirror
     className: NetworkRoomPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: ea714a8ddcfdee8a41aa00c4dd6ecdc7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SortingSprite
   - hash:
       serializedVersion: 2
       Hash: 71b711096c6c32621c1d4c02310898b7
@@ -1298,6 +1334,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: Tonemapping
+  - hash:
+      serializedVersion: 2
+      Hash: ec88a29443799a10841a3b12c53d6170
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterMover
   - hash:
       serializedVersion: 2
       Hash: 23b81d05a0ad0499613fc3e1a4a0501b
@@ -1472,6 +1514,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.Chat
     className: Player
+  - hash:
+      serializedVersion: 2
+      Hash: b7bfb3df086b842b4721cfe2525dadd7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpriteSorter
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
@@ -1738,34 +1786,34 @@ ScriptsOnlyBuild:
     className: KcpTransport
   - hash:
       serializedVersion: 2
-      Hash: 4be201806df3b948a56999069445d319
+      Hash: a9fbd72ec3e1d1ebcc02a7441bd95942
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CharacterMover
+    className: ColorSelectButton
   - hash:
       serializedVersion: 2
-      Hash: 4be201806df3b948a56999069445d319
+      Hash: 515cf30f29cd08a96b23ab4af06b9c9a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: LobbyCharacterMover
+    className: CustomizeUI
   - hash:
       serializedVersion: 2
-      Hash: 06e5cb7d592c2ea6def91ab1a0c930ce
+      Hash: a70d68cd11729ae45717612296b88628
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SpawnPositions
+    className: LobbyUIManager
   - hash:
       serializedVersion: 2
-      Hash: b7bfb3df086b842b4721cfe2525dadd7
+      Hash: efa75b8c8061c50d6724c65818128f32
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SpriteSorter
+    className: OutlineObject
   - hash:
       serializedVersion: 2
-      Hash: ea714a8ddcfdee8a41aa00c4dd6ecdc7
+      Hash: 0d998f8ae37d0389be5df0204e506656
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SortingSprite
+    className: CustomizeLaptop
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
