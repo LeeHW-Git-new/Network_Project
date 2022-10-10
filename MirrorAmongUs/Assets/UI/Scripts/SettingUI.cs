@@ -47,7 +47,7 @@ public class SettingUI : MonoBehaviour
                 break;
         }
     }
-    public void Close()
+    public virtual void Close()
     {
         StartCoroutine(CloseAfterDelay());
     }

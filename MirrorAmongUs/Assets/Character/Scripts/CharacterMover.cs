@@ -7,8 +7,19 @@ public class CharacterMover : NetworkBehaviour
 {
     Animator animator;
 
-    public bool isMoveable;
-
+    bool isMoveable;
+    public bool IsMoveable
+    {
+        get { return isMoveable; }
+        set
+        {
+            if(!value)
+            {
+                animator.SetBool("isMove", false);
+            }
+            isMoveable = value;
+        }
+    }
     [SyncVar]
     public float speed = 2f;
 
@@ -45,7 +56,7 @@ public class CharacterMover : NetworkBehaviour
 
     public void Move()
     {
-        if(hasAuthority && isMoveable)
+        if(hasAuthority && IsMoveable)
         {
             bool isMove = false;
 

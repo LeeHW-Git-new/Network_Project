@@ -8,6 +8,7 @@ public class SpawnPositions : MonoBehaviour
     Transform[] positions;
 
     int index;
+    public int Index { get { return index; } }
 
     public Vector3 GetSpawnPosition()
     {
