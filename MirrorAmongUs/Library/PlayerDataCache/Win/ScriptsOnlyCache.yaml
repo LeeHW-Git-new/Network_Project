@@ -11,6 +11,8 @@ ScriptsOnlyBuild:
     - CustomizeUI
     - FloatingCrew
     - GameRoomSettingUI
+    - GameRuleItem
+    - GameRuleStore
     - LobbyCharacterMover
     - LobbyUIManager
     - MainmenuUI
@@ -145,11 +147,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11370}
+    - Class: 114
       Script: {instanceID: 11374}
+    - Class: 114
+      Script: {instanceID: 11376}
     - Class: 114
       Script: {instanceID: 11378}
     - Class: 114
       Script: {instanceID: 11380}
+    - Class: 114
+      Script: {instanceID: 11382}
+    - Class: 114
+      Script: {instanceID: 11384}
     - Class: 114
       Script: {instanceID: 11386}
     - Class: 114
@@ -157,9 +167,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12760}
     - Class: 114
+      Script: {instanceID: 12818}
+    - Class: 114
       Script: {instanceID: 13108}
     - Class: 114
       Script: {instanceID: 13184}
+    - Class: 114
+      Script: {instanceID: 13714}
     - Class: 114
       Script: {instanceID: 14236}
     - Class: 114
@@ -173,6 +187,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15640}
     - Class: 114
+      Script: {instanceID: 15698}
+    - Class: 114
       Script: {instanceID: 16032}
     - Class: 114
       Script: {instanceID: 16512}
@@ -182,6 +198,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16666}
     - Class: 114
       Script: {instanceID: 16760}
+    - Class: 114
+      Script: {instanceID: 20150}
+    - Class: 114
+      Script: {instanceID: 20180}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -502,7 +522,7 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: 1d12411bfa32d734c4dad798554fe0fa
+      Hash: a881f79078fcddeee2729ed446f8512a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AmongUsRoomManager
@@ -1456,7 +1476,7 @@ ScriptsOnlyBuild:
     className: PlayerMovement
   - hash:
       serializedVersion: 2
-      Hash: 515cf30f29cd08a96b23ab4af06b9c9a
+      Hash: 5a35ab978ca629f871db292b4358fe93
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CustomizeUI
@@ -1814,6 +1834,18 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.dll
     namespaceName: kcp2k
     className: KcpTransport
+  - hash:
+      serializedVersion: 2
+      Hash: 69cb23c11c0455402c716675db5a7f7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameRuleItem
+  - hash:
+      serializedVersion: 2
+      Hash: e8912b54fb9aeb68a5dd8afe990d8860
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameRuleStore
   platform: 5
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
