@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Mirror;
 
 public class CharacterMover : NetworkBehaviour
@@ -35,6 +36,17 @@ public class CharacterMover : NetworkBehaviour
         }
         spriteRenderer.material.SetColor("_PlayerColor", PlayerColor.GetColor(newColor));
     }
+
+    [SyncVar(hook = nameof(SetNickname_Hook))]
+    public string nickname;
+    [SerializeField]
+    Text nicknameText;
+
+    public void SetNickname_Hook(string _, string value)
+    {
+        nicknameText.text = value;
+    }
+    
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -80,6 +92,14 @@ public class CharacterMover : NetworkBehaviour
                 }
             }
             animator.SetBool("isMove", isMove);
+        }
+        if(transform.localScale.x < 0)
+        {
+            nicknameText.transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if(transform.localScale.x > 0)
+        {
+            nicknameText.transform.localScale = new Vector3(1f, 1f, 1f);
         }
     }
 }

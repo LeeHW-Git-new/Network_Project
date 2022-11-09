@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using Mirror;
 
 public class LobbyUIManager : MonoBehaviour
 {
@@ -14,9 +15,17 @@ public class LobbyUIManager : MonoBehaviour
     public CustomizeUI CustomizeUI { get { return customizeUI; } }
 
     [SerializeField]
+    GameRoomPlayerCount gameRoomPlayerCounter;
+    public GameRoomPlayerCount GameRoomPlayerCounter { get { return gameRoomPlayerCounter; } }
+
+    [SerializeField]
     Button useButton;
     [SerializeField]
     Sprite originUseButonSprite;
+
+    [SerializeField]
+    Button startButton;
+
 
     private void Awake()
     {
@@ -34,5 +43,27 @@ public class LobbyUIManager : MonoBehaviour
         useButton.image.sprite = originUseButonSprite;
         useButton.onClick.RemoveAllListeners();
         useButton.interactable = false;
+    }
+
+    public void ActiveStartButton()
+    {
+        startButton.gameObject.SetActive(true);
+    }
+
+    public void SetInteractableStartButton(bool isInteractable)
+    {
+        startButton.interactable = isInteractable;
+    }
+
+    public void OnClickStartButton()
+    {
+        var players = FindObjectsOfType<AmongUsRoomPlayer>();
+        for(int i = 0; i < players.Length; i++)
+        {
+            players[i].readyToBegin = true;
+        }
+
+        var manager = NetworkManager.singleton as AmongUsRoomManager;
+        manager.ServerChangeScene(manager.GameplayScene);
     }
 }

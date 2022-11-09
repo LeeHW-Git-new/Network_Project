@@ -3331,7 +3331,7 @@ MonoBehaviour:
   playerSpawnMethod: 0
   spawnPrefabs:
   - {fileID: 7990321847257736479, guid: 79fcc56c382f42a46bbe70fc6d60ba4f, type: 3}
-  showRoomGUI: 1
+  showRoomGUI: 0
   minPlayers: 1
   roomPlayerPrefab: {fileID: 1557021128273417846, guid: 62317840ed9ba6a4c93f2307c79d247b,
     type: 3}
@@ -3340,6 +3340,8 @@ MonoBehaviour:
   _allPlayersReady: 0
   roomSlots: []
   clientIndex: 0
+  minPlayerCount: 0
+  imposterCount: 0
 --- !u!4 &1056078232
 Transform:
   m_ObjectHideFlags: 0
